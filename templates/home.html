@@ -14,10 +14,15 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800">
 
     <!-- Bootstrap Link Start-->
-    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
     <link href="{% static 'css/bootstrap-datepicker.css' %}" rel="stylesheet">
-    <link href="{% static 'css/bootstrap-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-slider.css' %}" rel="stylesheet"> -->
 
     <!-- I common Link Start-->
     <link href="{% static 'css/iconmoon.css' %}" rel="stylesheet">
@@ -59,267 +64,18 @@
 </head>
 
 <body>
-    <!--Main Wrapper-->
+
     <div class="wrapper">
-        <!-- Header Start -->
-        <header id="header">
-            <div class="main-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                            <div class="logo">
-                                <figure>
-                                    <a href="index.html" class="light-logo">
-                                        <img src="{% static 'logo/foodOnlineLogo.png' %}" alt="FoodHub" width="220">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="main-nav">
-                                <nav id="site-navigation" class="main-navigation">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Demos</a>
-                                            <ul>
-                                                <li><a href="index.html">Food Bakery</a></li>
-                                                <li><a href="mexican-restaurant.html">Mexican Restaurant</a></li>
-                                                <li><a href="foodstop.html">Food Stop</a></li>
-                                                <li><a href="rtl.html">Rtl Demo</a></li>
-                                                <li><a href="food-cout.html">Food Court</a></li>
-                                                <li><a href="single-restaurant.html">Single Restaurant Demo</a></li>
-                                            </ul>
-                                            <!--End Sub Menu -->
-                                        </li>
-                                        <li><a href="listings.html">Restaurants</a></li>
-                                        <li>
-                                            <a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="price-plans.html">Price Plans</a></li>
-                                                <li><a href="how-it-works.html">How it works</a></li>
-                                                <li><a href="faq.html">FAQ’s</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                                <li><a href="search-result.html">Search Result</a></li>
-                                                <li><a href="contact-us.html">Contact</a></li>
-                                            </ul>
-                                            <!--End Sub Menu -->
-                                        </li>
-                                        <li>
-                                            <a href="#">Blogs</a>
-                                            <ul>
-                                                <li><a href="blog-large.html">Blog Large</a></li>
-                                                <li><a href="blog-medium.html">Blog Medium</a></li>
-                                                <li><a href="blog-masonry.html">Blog Masonry</a></li>
-                                                <li><a href="blog-detail.html">Blog Detail Page</a></li>
-                                            </ul>
-                                            <!--End Sub Menu -->
-                                        </li>
-                                    </ul>
-                                </nav><!-- .main-navigation -->
-                            </div>
-                            <div class="main-location">
-                                <ul>
-                                    <li class="location-has-children">
-                                        <a href="#"><i class="icon-compass-with-white-needles"></i>Feel Like Eating</a>
-                                        <ul>
 
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-05-1.png">Apple
-                                                    Juice</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-19-1.png">BB.Q</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-22-1.png">Beef
-                                                    Roast</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-10-1.png">Carrot
-                                                    Juice</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-03-1.png">Cheese
-                                                    Burger</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-07-1.png">Chicken
-                                                    Roast</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-01-1.png">Chines
-                                                    Soup</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-18-1.png">Cold
-                                                    Coffee</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-23-1.png">Cold
-                                                    Drink</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-28-1.png">Cupcake</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-21-1.png">Doughnut</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-25-1.png">Drum
-                                                    Stick</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-11-1.png">Egg
-                                                    Fry</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-12-1.png">Fish
-                                                    Fry</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-13-1.png">Fresh
-                                                    Juice</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-30-1.png">Hot
-                                                    Dogs</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-26-1.png">Ice
-                                                    Cream</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-15-1.png">Magi</a>
-                                                <span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-09-1.png">Noodles</a>
-                                                <span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-14-1.png">Pastry</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-29-1.png">Pizza</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-06-1.png">Potato
-                                                    Fries</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-24-1.png">Prawns</a>
-                                                <span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-17-1.png">Sham
-                                                    pane</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-27-1.png">Shawarma</a><span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-04-1.png">Soda
-                                                    water</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-16-1.png">Stakes</a>
-                                                <span></span>
-                                            </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-22-1.png">Steam
-                                                    Roast</a> <span></span> </li>
-                                            <li><a href="listings.html"><img alt=""
-                                                        src="assets/extra-images/food-icon-02-1.png">Tea</a><span></span>
-                                            </li>
+        {% include 'includes/header.html' %}
 
-                                        </ul>
-                                    </li>
-                                    <li class="location-has-children choose-location">
-                                        <a href="#"><i class="icon-location-pin2"></i>Choose location</a>
-                                        <ul>
-                                            <li class="select-location">
-                                                <div class="foodbakery-locations-fields-group">
-                                                    <form action="#">
-                                                        <span id="foodbakery_radius_location_open"
-                                                            class="foodbakery-radius-location"><i
-                                                                class="icon-target5"></i></span>
-                                                        <span
-                                                            class="foodbakery-input-cross foodbakery-input-cross-header"
-                                                            style="display:none;">
-                                                            <i class="icon-cross"></i></span>
-                                                        <input type="text" value="" name="location"
-                                                            placeholder="All Locations" autocomplete="off">
-
-                                                        <span><span class="loc-icon-holder"><i
-                                                                    class="icon-target3"></i></span></span>
-                                                        <div class="select-location" id="foodbakery-radius-range622192"
-                                                            style="display: none;">
-                                                            <div class="select-popup popup-open">
-                                                                <a id="location_close_popup622192" href="javascript:0;"
-                                                                    class="location-close-popup">
-                                                                    <i class="icon-times"></i></a>
-                                                                <input type="hidden" class="foodbakery-radius"
-                                                                    name="foodbakery_radius" value="10">
-                                                                <p>Show with in</p>
-                                                                <input id="ex16b313324" type="text" data-value="10"
-                                                                    value="10" style="display: none;">
-                                                                <script>
-                                                                    jQuery(document).ready(function () {
-                                                                        var elem = jQuery("#ex16b313324");
-                                                                        if (elem.length != "") {
-                                                                            elem.slider({
-                                                                                step: 1,
-                                                                                min: 0,
-                                                                                max: 500,
-                                                                                value: 10,
-                                                                            });
-                                                                            elem.on("slideStop", function () {
-                                                                                var rang_slider_val = elem.val();
-                                                                                jQuery("#ex16b313324CurrentSliderValLabel").html(rang_slider_val);
-                                                                                jQuery("#range-hidden-foodbakery-radius622192").val(rang_slider_val);
-                                                                                //foodbakery_restaurant_content("622192");
-                                                                            });
-                                                                            elem.on("slide", function () {
-                                                                                jQuery("#ex16b313324CurrentSliderValLabel").html(elem.val());
-                                                                            });
-                                                                        }
-
-                                                                        $("#foodbakery_radius_location_open").click(function () {
-                                                                            $("#foodbakery-radius-range622192").show();
-                                                                        });
-                                                                        $("#location_close_popup622192").click(function () {
-                                                                            $("#foodbakery-radius-range622192").hide();
-                                                                        });
-                                                                    });
-                                                                </script>
-                                                                <span>Miles: <span
-                                                                        id="ex16b313324CurrentSliderValLabel">10</span></span><br>
-                                                                <p class="my-location">of <i
-                                                                        class="cs-color icon-location-arrow"></i><a
-                                                                        id="foodbakery-geo-location-all"
-                                                                        class="cs-color foodbakery-geo-location313324"
-                                                                        href="javascript:void(0)">My location</a></p>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </li>
-                                            <li class="popular-location">Popular Locations</li>
-                                            <li>
-                                                <ul>
-                                                    <li><a href="#">Acle</a></li>
-                                                    <li><a href="#">Cheshire</a></li>
-                                                    <li><a href="#">Crewe</a></li>
-                                                    <li><a href="#">Devon</a></li>
-                                                    <li><a href="#">England</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <div class="login-option">
-                                <a class="cs-color cs-popup-joinus-btn login-popup" data-target="#sign-in"
-                                    data-toggle="modal" href="#user-register">Login / Register</a><a
-                                    class="get-start-btn" href="register-restaurant.html">
-                                    Register
-                                    Restaurant </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Header End -->
         <!-- Main Section Start -->
         <div class="main-section">
-            <!-- Home Pages Elements Strat -->
+            <!-- Home Pages Elements Start -->
+
             <!-- Main Search Start -->
             <div class="page-section nopadding cs-nomargin"
-                style="padding-top: 200px; padding-bottom: 150px; margin-bottom: 0px; background: url(assets/extra-images/bg-image1.jpg) no-repeat center / cover;">
+                style="padding-top: 200px; padding-bottom: 150px; margin-bottom: 0px; background: url(../foodhub/static/extra-images/bg-image1.jpg) no-repeat center / cover;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -454,6 +210,7 @@
                 </div>
             </div>
             <!-- Main Search End -->
+
             <!-- Browse By Cuisine Section Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 60px;padding-bottom: 0px;margin-bottom: 0px;">
@@ -469,7 +226,7 @@
                                     <div class="col-lg-2 col-sm-4 col-xs-6">
                                         <div class="categories-list">
                                             <a href="#">
-                                                <img alt="" src="assets/extra-images/food-icon-19-1.png">
+                                                <img alt="" src="{% static 'extra-images/food-icon-19-1.png' %}">
                                                 <h6><span>BB.Q</span></h6>
                                             </a>
                                         </div>
@@ -478,7 +235,7 @@
                                 <div class="col-lg-2 col-sm-4 col-xs-6">
                                     <div class="categories-list">
                                         <a href="#">
-                                            <img alt="" src="assets/extra-images/food-icon-22-1.png">
+                                            <img alt="" src="{% static 'extra-images/food-icon-22-1.png' %}">
                                             <h6><span>Beef Roast</span></h6>
                                         </a>
                                     </div>
@@ -486,7 +243,7 @@
                                 <div class="col-lg-2 col-sm-4 col-xs-6">
                                     <div class="categories-list">
                                         <a href="#">
-                                            <img alt="" src="assets/extra-images/food-icon-07-1.png">
+                                            <img alt="" src="{% static 'extra-images/food-icon-07-1.png' %}">
                                             <h6><span>Chicken Roast</span></h6>
                                         </a>
                                     </div>
@@ -494,7 +251,7 @@
                                 <div class="col-lg-2 col-sm-4 col-xs-6">
                                     <div class="categories-list">
                                         <a href="#">
-                                            <img alt="" src="assets/extra-images/food-icon-28-1.png">
+                                            <img alt="" src="{% static 'extra-images/food-icon-28-1.png' %}">
                                             <h6><span>Cupcake</span></h6>
                                         </a>
                                     </div>
@@ -502,7 +259,7 @@
                                 <div class="col-lg-2 col-sm-4 col-xs-6">
                                     <div class="categories-list">
                                         <a href="#">
-                                            <img alt="" src="assets/extra-images/food-icon-21-1.png">
+                                            <img alt="" src="{% static 'extra-images/food-icon-21-1.png' %}">
                                             <h6><span>Doughnut</span></h6>
                                         </a>
                                     </div>
@@ -510,7 +267,7 @@
                                 <div class="col-lg-2 col-sm-4 col-xs-6">
                                     <div class="categories-list">
                                         <a href="#">
-                                            <img alt="" src="assets/extra-images/food-icon-02-1.png">
+                                            <img alt="" src="{% static 'extra-images/food-icon-02-1.png' %}">
                                             <h6><span>Tea</span></h6>
                                         </a>
                                     </div>
@@ -521,6 +278,7 @@
                 </div>
             </div>
             <!-- Browse By Cuisine Section End -->
+
             <!-- Popular Localities Section Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 0px;padding-bottom: 60px;margin-bottom: 0px;">
@@ -639,7 +397,8 @@
                 </div>
             </div>
             <!-- Popular Localities Section End -->
-            <!-- Top Restarurants Section Start -->
+
+            <!-- Top Restaurants Section Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 60px;padding-bottom: 0px;margin-bottom: 0px;background: #ffffff;">
                 <div class="container">
@@ -655,51 +414,58 @@
                                 <ul>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/listing-logo18.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/listing-logo18.png" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/fb-restaurant-02.jpg"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/fb-restaurant-02.jpg" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/fb-restaurant-04.jpg"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/fb-restaurant-04.jpg" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/fb-restaurant-06.jpg"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/fb-restaurant-06.jpg" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img
-                                                    src="assets/extra-images/xlisting-logo03.png.pagespeed.ic_.aT-o9LinEJ.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/xlisting-logo03.png.pagespeed.ic_.aT-o9LinEJ.png" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/listing-logo09.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/listing-logo09.png" class="attachment-full size-full wp-post-image" alt="">
+                                                </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/listing-logo18.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/listing-logo18.png" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                     <li class="has-border">
                                         <figure>
-                                            <a href="#"><img src="assets/extra-images/fb-restaurant-09.png"
-                                                    class="attachment-full size-full wp-post-image" alt=""></a>
+                                            <a href="#">
+                                                <img src="assets/extra-images/fb-restaurant-09.png" class="attachment-full size-full wp-post-image" alt="">
+                                            </a>
                                         </figure>
                                     </li>
                                 </ul>
@@ -708,8 +474,9 @@
                     </div>
                 </div>
             </div>
-            <!-- Top Restarurants Section End -->
-            <!-- Choose From Most Popular Listin Start -->
+            <!-- Top Restaurants Section End -->
+
+            <!-- Choose From Most Popular Listing Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 60px;padding-bottom: 50px;margin-bottom: 0px;background: #ffffff;">
                 <div class="container">
@@ -1088,6 +855,7 @@
                 </div>
             </div>
             <!-- Choose From Most Popular Listing End -->
+
             <!-- Choose From Most Popular Section Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 54px;padding-bottom: 36px;margin-bottom: 0px;background: #ebedf3;">
@@ -1103,7 +871,7 @@
                                 <div class="testimonial default">
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="text-holder">
-                                            <p>I love you, FoodBakery Just ordered me some grub, and I tell you,
+                                            <p>I love you, FoodHub Just ordered me some grub, and I tell you,
                                                 you folks
                                                 make that part of my life easy.</p>
                                             <div class="img-holder">
@@ -1117,7 +885,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="text-holder">
-                                            <p>Made my first @FoodBakery order today. So great to be able to
+                                            <p>Made my first @FoodHub order today. So great to be able to
                                                 order food and
                                                 not have to talk to anyone.</p>
                                             <div class="img-holder">
@@ -1145,7 +913,7 @@
                                     </div>
                                     <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                                         <div class="text-holder">
-                                            <p>Seriously, @FoodBakery makes it easy for my coworkers and I to
+                                            <p>Seriously, @FoodHub makes it easy for my coworkers and I to
                                                 order food and
                                                 get it to our office in a jiffy. FOOD!</p>
                                             <div class="img-holder">
@@ -1164,7 +932,8 @@
                 </div>
             </div>
             <!-- Choose From Most Popular Section End -->
-            <!-- Colunm Text Section Start -->
+
+            <!-- Column Text Section Start -->
             <div class="page-section nopadding cs-nomargin"
                 style="margin-top: 0px;padding-top: 80px;padding-bottom: 0px;margin-bottom: 0px;background: #ffffff;">
                 <div class="container">
@@ -1172,23 +941,28 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="main-post promo-box">
                                 <div class="img-frame">
-                                    <figure><img src="assets/extra-images/main-post-img-1.png" alt="#">
+                                    <figure><img src="{% static 'extra-images/main-post-img-1.png' %}" alt="#">
                                     </figure>
                                 </div>
                                 <div class="column-text">
-                                    <h3 style="color:#000000 !important;">FoodBakery in your mobile! Get our app
+                                    <h3 style="color:#000000 !important;">
+                                        FoodHub in your mobile! Get our app
                                     </h3>
-                                    <div class="promo-content">Get our app, it's the fastest way to order food
-                                        on the go.
+                                    <div class="promo-content">
+                                        Get our app, it's the fastest way to order food on the go.
                                     </div>
-                                    <a class="app-btn" href="#"><img src="assets/extra-images/app-img1-1.png"
-                                            alt=""></a>
-                                    <a class="app-btn" href=""><img src="assets/extra-images/app-img2-1.png" alt=""></a>
+                                    <a class="app-btn" href="#">
+                                        <img src="{% static 'extra-images/app-img1-1.png' %}" alt="Image Not Available">
+                                    </a>
+                                    <a class="app-btn" href="">
+                                        <img src="{% static 'extra-images/app-img2-1.png' %}" alt="Image Not Available">
+                                    </a>
                                     <form>
-                                        <div class="field-holder"><input class="field-input" type="email"
-                                                placeholder="Your Email">
-                                            <label class="field-label-btn"><input class="field-btn" type="submit"
-                                                    value="Send Link"></label>
+                                        <div class="field-holder">
+                                            <input class="field-input" type="email" placeholder="Your Email">
+                                            <label class="field-label-btn">
+                                                <input class="field-btn" type="submit" value="Send Link">
+                                            </label>
                                         </div>
                                     </form>
                                 </div>
@@ -1197,45 +971,46 @@
                     </div>
                 </div>
             </div>
-            <!-- Colunm Text Section End -->
+            <!-- Column Text Section End -->
+
             <!-- Client logo Section Start -->
             <div class="page-section  nopadding cs-nomargin"
-                style="margin-top: 0px;padding-top: 20px;padding-bottom: 10px;margin-bottom: 0px;background: #69bbc0;">
+                style="padding-top: 10px;padding-bottom: 10px;background: #36183e;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="company-logo simple">
                                 <ul>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-1.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-1.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-2.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-2.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-3.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-3.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-4.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-4.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-5.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-5.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-6.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-6.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-7.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-7.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                     <li>
-                                        <figure><a href="#"><img src="assets/extra-images/fb-clients-8.png" alt=""></a>
+                                        <figure><a href="#"><img src="{% static 'extra-images/fb-clients-8.png' %}" alt=""></a>
                                         </figure>
                                     </li>
                                 </ul>
@@ -1245,127 +1020,15 @@
                 </div>
             </div>
             <!-- Client logo Section End -->
+
             <!-- Home Pages Elements End  -->
         </div>
         <!-- Main Section End -->
-        <!-- Footer Start -->
-        <footer id="footer" class="footer-style-2">
-            <div class="footer-widget">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="widget widget-newsletter">
-                                <div class="widget-title">
-                                    <h5>Subscribe to our Newsletter</h5>
-                                </div>
-                                <div class="fieldset">
-                                    <form action="#">
-                                        <div class="field-holder">
-                                            <label>
-                                                <i class=" icon-envelope3"></i>
-                                                <input type="text" class="field-input"
-                                                    placeholder=" Enter Your Email Address...">
-                                            </label>
-                                        </div>
-                                        <div class="field-holder btn-holder">
-                                            <input class="subscribe-btn bgcolor" type="submit" value="Sign Up">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="widget widget_text">
-                                <div class="widget-title">
-                                    <h5>About us</h5>
-                                </div>
-                                <div class="textwidget">Foodbakery is the business of food and restaurants.
-                                    Ridiculus sociosqu cursus neque cursus curae ante scelerisque vehicula.
-                                    Explore restaurants, bars, and cafés by locality cum doctus civibus
-                                    efficiantur in imperdiet deterruisset. FoodBakery Just ordered me some grub
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <div class="widget widget-top-cities">
-                                <div class="widget-title">
-                                    <h5>Popular Cities</h5>
-                                </div>
-                                <ul>
-                                    <li><a href="listings.html">Aberaeron</a></li>
-                                    <li><a href="listings.html">Aberdeenshire</a></li>
-                                    <li><a href="listings.html">Anston</a></li>
-                                    <li><a href="listings.html">Ascot</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <div class="widget widget-top-cities">
-                                <div class="widget-title">
-                                    <h5>Popular Cuisines</h5>
-                                </div>
-                                <ul>
-                                    <li><a href="listings.html">BB.Q</a></li>
-                                    <li><a href="listings.html">ChickenRoast</a></li>
-                                    <li><a href="listings.html">Cold Coffee</a></li>
-                                    <li><a href="listings.html">Cold Drink</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
-                            <div class="widget widget-categories">
-                                <div class="widget-title">
-                                    <h5>Menu</h5>
-                                </div>
-                                <ul>
-                                    <li><a href="blog-large.html">Blog Large</a></li>
-                                    <li><a href="blog-medium.html">Blog Medium</a></li>
-                                    <li><a href="blog-medium.html">Blog Masonry</a></li>
-                                    <li><a href="contact-us.html">Contact</a></li>
-                                    <li><a href="faq.html">FAQ’s</a></li>
-                                    <li><a href="how-it-works.html">How itworks</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <div class="widget widget-connect">
-                                <div class="widget-title">
-                                    <h5> Connect</h5>
-                                </div>
-                                <ul>
-                                    <li><span class="bgcolor"><i class="icon-ring_volume"></i></span>
-                                        <p>+1 123 456 7892</p>
-                                    </li>
-                                    <li><span class="bgcolor"><i class="icon-envelope-o"></i></span>
-                                        <p><a href="#">support@chimpstudio.com</a>
-                                        </p>
-                                    </li>
-                                    <li><span class="bgcolor"><i class="icon-location-pin2"></i></span>
-                                        <p>33 - B, 2nd Floor, Saint Jhon Doe Appartments, Sussex, UK.26AL565C.</p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright-sec">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="copyright-inner">
-                                <div class="copy-right">
-                                    <p>© 2020 Foodbakery. All Rights Reserved. Powered By <a href="#">ChimpGroup</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- /.cs-copyright -->
-        </footer>
-        <!-- Footer End -->
+
+        {% include 'includes/footer.html' %}
+
     </div>
+
     <!-- Modal Popup Start -->
     <div class="modal fade" id="sign-in" aria-labelledby="myModalLabel">
         <div class="modal-dialog">
@@ -1582,6 +1245,7 @@
         </div>
     </div>
     <!-- Modal Popup End -->
+
     <script src="{% static 'js/responsive.menu.js' %}"></script>
     <script src="{% static 'js/swiper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>

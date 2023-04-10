@@ -66,7 +66,7 @@
 #main .login-form .social-media ul, #main .signup-form .social-media ul { text-align: left; margin-left: -10px; }
 #main .login-form .social-media li, #main .signup-form .social-media li { width: auto; min-width: 230px; margin-left: 10px; }
 #main .login-form .social-media li a, #main .signup-form .social-media li a { padding-right: 10px; }
-/* Header Style End 
+/* Header Style End
 /* Alerts Style */
 .login-form .alert-danger, .login-form .alert-info { background-color: inherit; background-image: none; border: none; -webkit-box-shadow: none; box-shadow: none; color: #b63a2b; display: block; margin: 0 0 10px; padding: 0; position: relative; }
 .login-form .alert-info { color: #b3b6c0; letter-spacing: 1px; line-height: 24px; margin: 0 0 20px; }
@@ -130,7 +130,7 @@
 .listing-main-search { text-align: center; width: 58.33333333%; margin: 0 auto; }
 .main-search .row { margin-right: -10px; margin-left: -10px; }
 .main-search [class*="col-lg"], .main-search [class*="col-md"], .main-search [class*="col-sm"], .main-search [class*="col-xs"] { padding: 0 10px; }
-.main-search .field-holder { position: relative; margin: 0 0 20px; }
+.main-search .field-holder { position: relative; }
 .main-search .field-holder li { list-style: none; }
 .listing-main-search .main-search .field-holder .city-autocomplete { margin-top: -2px; }
 .main-search .field-holder ul { margin-bottom: 0; }
@@ -167,7 +167,7 @@
 .main-search .foodbakery-locations-ajax-list li.no-location-found { color: #c33332; }
 /* main-search.fancy Start */
 .main-search.fancy { margin-bottom: 40px; }
-.main-search.fancy.bg-holder { background-color: #c33332; padding: 20px 20px 0; }
+.main-search.fancy.bg-holder { background-color: #c33332; padding: 10px; }
 .main-search.fancy .field-holder { width: 100%; }
 .main-search.fancy .field-holder ul { margin-bottom: 0; }
 .main-search.fancy .field-holder .chosen-container-single .chosen-single { padding: 10px 15px; border-radius: inherit; height: 50px; line-height: 50px; background-color: #fff; }
